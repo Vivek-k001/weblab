@@ -16,16 +16,7 @@
     border: 1px solid grey;
     padding: 10px;
 }
-
-#studentTable tbody tr:nth-child(odd) {
-    background-color: #ffffff;
-}
-
-#studentTable tbody tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-
 #studentTable tbody tr:hover {
     background-color: #959595;
-    transition: background-color 0.9s ease;
+    transition: background-color 0.7s ease;
 }

@@ -1,0 +1,55 @@
+<html>
+<head>
+  <title>Light Bulb</title>
+  <style>
+    body {
+      background-color: black;
+      text-align: center;
+      margin-top: 100px;
+      font-family: Arial, sans-serif;
+    }
+
+    img {
+      width: 250px;
+      height: auto;
+    }
+
+    button {
+      background-color: orange;
+      color: black;
+      border: none;
+      padding: 10px 20px;
+      margin: 10px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+      transition: 0.39s;
+    }
+
+    button:hover {
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+  <img id="bulb" src="bulboff.gif" alt="Light Bulb">
+  <br>
+  <button onclick="turnOn()">Turn On</button>
+  <button onclick="turnOff()">Turn Off</button>
+
+  <script>
+    const bulb = document.getElementById('bulb');
+
+    function turnOn() {
+      bulb.src = "bulbon.gif";
+      bulb.classList.add("glow");
+    }
+
+    function turnOff() {
+      bulb.src = "bulboff.gif";
+      bulb.classList.remove("glow");
+    }
+  </script>
+</body>
+</html>

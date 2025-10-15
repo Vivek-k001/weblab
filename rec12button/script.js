@@ -1,8 +1,7 @@
-const button = document.getElementById("colorBtn");
-
-button.addEventListener("click",function() {
+let bgcolor = document.getElementById('change');
+bgcolor.addEventListener('click', function() {
 document.body.style.backgroundColor = "red";
 });
-button.addEventListener("dbclick",function() {
+bgcolor.addEventListener('dblclick', function() {
 document.body.style.backgroundColor = "green";
 });

@@ -1,19 +1,14 @@
-/* Class selector */
-.first-para {
+.first{
     color: white;
     background-color: green;
     padding: 10px;
 }
-
-/* ID selector */
-#second-para {
+#second {
     color: red;
     background-color: orange;
     padding: 10px;
 }
-
-/* Tag selector */
-p {
+p{
     color: blue;
     background-color: lightgray;
     padding: 10px;

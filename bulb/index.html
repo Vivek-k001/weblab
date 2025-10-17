@@ -33,7 +33,7 @@
   </style>
 </head>
 <body>
-  <img id="bulb" src="bulboff.gif" alt="Light Bulb">
+  <img id="bulb" src="bulboff.jpg" alt="Light Bulb">
   <br>
   <button onclick="turnOn()">Turn On</button>
   <button onclick="turnOff()">Turn Off</button>
@@ -42,12 +42,12 @@
     const bulb = document.getElementById('bulb');
 
     function turnOn() {
-      bulb.src = "bulbon.gif";
+      bulb.src = "bulbon.jpg";
       bulb.classList.add("glow");
     }
 
     function turnOff() {
-      bulb.src = "bulboff.gif";
+      bulb.src = "bulboff.jpg";
       bulb.classList.remove("glow");
     }
   </script>

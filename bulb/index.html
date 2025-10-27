@@ -32,19 +32,16 @@
   </style>
 </head>
 <body>
-  <img id="bulb" src="bulboff.jpg" alt="Light Bulb">
+  <img id="bulb" src="bulboff.jpg" >
   <br>
   <button onclick="turnOn()">Turn On</button>
   <button onclick="turnOff()">Turn Off</button>
-
   <script>
     const bulb = document.getElementById('bulb');
-
     function turnOn() {
       bulb.src = "bulbon.jpg";
       bulb.classList.add("glow");
     }
-
     function turnOff() {
       bulb.src = "bulboff.jpg";
       bulb.classList.remove("glow");

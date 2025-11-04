@@ -52,8 +52,8 @@
 <tr>
     <td>MOBILE NUMBER:</td>
     <td>
-        <input type="text" id="mobile" maxlength="10">
-        <div class="error" id="mobileError"></div>
+        <input type="text" id="mobile" name="mobile" maxlength="10" placeholder="1234567890" 
+              oninput="this.value=this.value.replace(/[^0-9]/g,'');" required></div>
     </td>
 </tr>
 
@@ -85,9 +85,10 @@
 <tr>
     <td>PIN CODE:</td>
     <td>
-        <input type="text" id="pincode" maxlength="6">
-        <div class="error" id="pincodeError"></div>
-    </td>
+            <input type="text" id="pin" name="pin" maxlength="6" placeholder="6 digit number" 
+              oninput="this.value=this.value.replace(/[^0-9]/g,'');">
+            <span class="note">(6 digit number)</span>
+          </td>
 </tr>
 
 <tr>

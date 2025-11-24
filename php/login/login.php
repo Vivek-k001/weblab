@@ -29,20 +29,25 @@
 	}
 	?>
 	<!DOCTYPE html>
-	<html>
-	<head>
-	    <title>Login Page</title>
-	    <style>
+<html>
+<head>
+    <title>Login Page</title>
+    <style>
     body {
         font-family: Arial, sans-serif;
         height: 100vh;
         margin: 0;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
+
         background: linear-gradient(115deg, #b3e5fc, #e1bee7, #c5cae9, #ffe0f7);
         background-size: 400% 400%;
         animation: liquidFlow 18s ease infinite, ledGlow 6s ease-in-out infinite alternate;
+
+        /* Light pastel outline around entire page */
+        box-shadow: 0 0 35px rgba(255,255,255,0.3) inset;
     }
 
     /* Liquid flowing gradient animation */
@@ -58,14 +63,30 @@
         100% { filter: brightness(130%); }
     }
 
+    h2 {
+        color: grey;
+        font-size: 32px;
+        margin-bottom: 20px;
+        text-shadow: 0 0 10px rgba(255,255,255,0.9);
+    }
+
     form {
         background: rgba(255, 255, 255, 0.75);
         backdrop-filter: blur(12px);
         display: inline-block;
         padding: 40px;
         border-radius: 12px;
-        box-shadow: 0 0 25px rgba(255, 255, 255, 0.4),
-                    0 0 45px rgba(150, 200, 255, 0.4);
+
+        /* Light outline around the form */
+        border: 3px solid grey;
+        outline: 5px solid rgba(255, 255, 255, 0.35);
+        outline-offset: -10px;
+
+        box-shadow: 
+            0 0 25px rgba(255, 255, 255, 0.4),
+            0 0 45px rgba(150, 200, 255, 0.4),
+            0 0 65px rgba(200, 150, 255, 0.3);
+
         animation: softPulse 5s ease-in-out infinite alternate;
     }
 
@@ -81,8 +102,11 @@
         width: 220px;
         margin: 10px 0;
         border-radius: 6px;
-        border: 1px solid #ccc;
+
+        /* light outline for each input */
+        border: 2px solid grey);
         background: rgba(255,255,255,0.9);
+        box-shadow: 0 0 8px rgba(255,255,255,0.5);
     }
 
     button {
@@ -107,20 +131,21 @@
         font-weight: bold;
         margin-top: 10px;
     }
-</style>
+    </style>
+</head>
+<body>
+    <h2>Login</h2>
 
-	</head>
-	<body>
-	    <h2>Login</h2>
-	    <form method="POST" action="login.php">
-		<label>Username:</label><br>
-		<input type="text" name="username" required><br><br>
-		
-		<label>Password:</label><br>
-		<input type="password" name="password" required><br><br>
-		
-		<button type="submit">Login</button>
-		<p class="msg"><?php echo $message; ?></p>
-	    </form>
-	</body>
-	</html>
+    <form method="POST" action="login.php">
+        <label>Username:</label><br>
+        <input type="text" name="username" required><br><br>
+
+        <label>Password:</label><br>
+        <input type="password" name="password" required><br><br>
+
+        <center><button type="submit">Login</button></center>
+        <p class="msg"><?php echo $message; ?></p>
+    </form>
+</body>
+</html>
+

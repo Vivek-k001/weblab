@@ -4,10 +4,14 @@ $servername = "localhost";
 $username = "root";     // default username
 $password = "";         // default password
 <<<<<<< HEAD
+<<<<<<< HEAD
 $dbname = "employee";
 =======
 $dbname = "company";
 >>>>>>> 2788e3d1e65eedcc12d0b0b648e2da81ed38ad13
+=======
+$dbname = "employee";
+>>>>>>> 3def9ae3d61d1254d608dfab6d6db7d813b4053c
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);

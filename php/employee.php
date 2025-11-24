@@ -3,7 +3,11 @@
 $servername = "localhost";
 $username = "root";     // default username
 $password = "";         // default password
+<<<<<<< HEAD
 $dbname = "employee";
+=======
+$dbname = "company";
+>>>>>>> 2788e3d1e65eedcc12d0b0b648e2da81ed38ad13
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -91,4 +95,7 @@ if (isset($_POST['submit'])) {
     ?>
 </body>
 </html>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2788e3d1e65eedcc12d0b0b648e2da81ed38ad13
